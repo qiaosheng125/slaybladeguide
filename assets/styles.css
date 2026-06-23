@@ -218,6 +218,78 @@ h1 {
   color: #1d4ed8;
 }
 
+.status-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin: 0 0 22px;
+}
+
+.status-card {
+  border: 1px solid var(--line);
+  background: #fff;
+  padding: 16px;
+  min-height: 118px;
+}
+
+.status-card .label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.status-card strong {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.status-card p,
+.note {
+  margin: 0;
+  color: var(--muted);
+}
+
+.split {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.panel {
+  border: 1px solid var(--line);
+  background: #fff;
+  padding: 18px;
+}
+
+.panel h2,
+.panel h3 {
+  margin-top: 0;
+}
+
+.check-list,
+.update-list {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.check-list li,
+.update-list li {
+  margin: 8px 0;
+}
+
+.last-checked {
+  display: inline-block;
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+}
+
 .status-table {
   width: 100%;
   border-collapse: collapse;
@@ -294,7 +366,9 @@ h1 {
   }
 
   .grid,
-  .grid.two {
+  .grid.two,
+  .status-cards,
+  .split {
     grid-template-columns: 1fr;
   }
 
@@ -302,4 +376,3 @@ h1 {
     font-size: 14px;
   }
 }
-
