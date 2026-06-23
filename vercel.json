@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.slaybladeguide.com"
+        }
+      ],
+      "destination": "https://slaybladeguide.com/:path*",
+      "permanent": true
+    }
+  ]
+}
